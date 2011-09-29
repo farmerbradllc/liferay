@@ -1,61 +1,9 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <meta charset='utf-8'>
-
-  <title>randombrad/liferay @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #1987ea;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-
-	.post {
-		-moz-border-radius: 5px;
-		-webkit-border-radius: 5px;
-		border-radius: 5px;
-		padding: 5px;
-		margin: 10px 0;
-		background: #FFF;
-	}
-    h1 { font-size: 3.8em; color: #e67815; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #e67815; }
-    h3 { text-align: center; color: #e67815; }
-    a { color: #e67815; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-<script type="text/javascript" src="http://liferaytips.tumblr.com/api/read/json"></script>
-</head>
-
-<body>
-  <div id="container">
-
-   <script>
-		document.onload = most_recent();
-		function most_recent(){
-			for(var i=0;i< 30;i++){
-				var title = tumblr_api_read.posts[i]['regular-title'];
-				var date = tumblr_api_read.posts[i]['date'];
-				var body = tumblr_api_read.posts[i]['regular-body'];
-				document.write("<div class='post'><div class='tumblr_title'>" + title + "</div><div class='tumblr_date'>" + date + "</div><div class='tumblr_body'>" + body + "</div></div>");
-			}
-		}
-	</script>
-  </div>
-
-  
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<title>Randombrad Liferay Tips</title>
+	</head>
+	<body style="margin: 0;">
+		<iframe src="//liferaytips.tumblr.com" width="100%" height="100%" frameborder="0"></iframe>
+	</body>
 </html>
