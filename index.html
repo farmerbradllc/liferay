@@ -14,10 +14,17 @@
     }
     #container {
       margin: 0 auto;
-	padding: 5px;
-	background: #999;
       width: 700px;
     }
+
+	.post {
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		padding: 5px;
+		margin: 10px 0;
+		background: #FFF;
+	}
     h1 { font-size: 3.8em; color: #e67815; margin-bottom: 3px; }
     h1 .small { font-size: 0.4em; }
     h1 a { text-decoration: none }
@@ -43,7 +50,7 @@
 				var title = tumblr_api_read.posts[i]['regular-title'];
 				var date = tumblr_api_read.posts[i]['date'];
 				var body = tumblr_api_read.posts[i]['regular-body'];
-				document.write("<div class='tumblr_title'>" + title + "</div><div class='tumblr_date'>" + date + "</div><div class='tumblr_body'>" + body + "</div>");
+				document.write("<div class='post'><div class='tumblr_title'>" + title + "</div><div class='tumblr_date'>" + date + "</div><div class='tumblr_body'>" + body + "</div></div>");
 			}
 		}
 	</script>
